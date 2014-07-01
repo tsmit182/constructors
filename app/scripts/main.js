@@ -49,7 +49,7 @@ var Dog = function (traits) {
 
 var Human = function (traits) {
 	var traits = traits || {};
-	this.cool = traits.cool;
+	this.cool = traits.cool === undefined ? false : traits.cool;
 	this.pet = function(doggie) {
 		doggie.status = 'happy';
 	}
