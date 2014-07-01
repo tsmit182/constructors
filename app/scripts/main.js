@@ -35,6 +35,38 @@ function expect(target) {
 // \___/\____/_/ /_/____/\__/_/   \__,_/\___/\__/\____/_/  /____/  
 // 
 // ANSWERS GO HERE
+var Dog = function (traits) {
+	var traits = traits || {};
+	this.color = traits.color;
+	this.hungry = traits.hungry === undefined ? true : traits.hungry;
+	//or
+	// this.hungry = traits.hungry || true;
+	this.status = traits.status || 'normal';
+	this.owner = traits.owner;
+
+}
+
+
+var Human = function (traits) {
+	var traits = traits || {};
+	this.cool = traits.cool;
+	this.pet = function(doggie) {
+		doggie.status = 'happy';
+	}
+	this.feed = function(doggie) {
+		doggie.hungry =  false;
+	}
+};
+
+// mason.pet(sadie);
+
+// sadie.pet = function(what, change) {
+// 	what.status = change;
+// }
+
+// taylor = function (alert) {
+
+// }
 
 // END ANSWERS
 
