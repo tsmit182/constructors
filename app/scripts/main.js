@@ -58,6 +58,7 @@ var Human = function (traits) {
 	}
 };
 
+
 // mason.pet(sadie);
 
 // sadie.pet = function(what, change) {
@@ -100,7 +101,6 @@ var mason = new Human();
 var julia = new Human({
   cool: true
 });
-
 
 //                     __           __  __    _                             __  
 //    ____ ___  ____ _/ /_____     / /_/ /_  (_)____   _      ______  _____/ /__
